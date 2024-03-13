@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="error">Error!</string>
+    <string name="ok">Ok</string>
+    <string name="oops_something_went_wrong">Oops! Something went wrong!</string>
+    <string name="the_list_is_empty">The list is empty!</string>
+    <string name="nullString">-</string>
+</resources>
