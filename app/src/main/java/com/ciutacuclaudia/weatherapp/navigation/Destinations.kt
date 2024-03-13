@@ -1,9 +1,8 @@
 package com.ciutacuclaudia.weatherapp.navigation
 
-interface Destinations {
+sealed class Destination(
     val route: String
-}
-
-object MainScreenDestination : Destinations {
-    override val route: String = "main_screen"
+) {
+    data object SplashScreen : Destination(route = "splashScreen")
+    data object MainScreen : Destination(route = "mainScreen")
 }

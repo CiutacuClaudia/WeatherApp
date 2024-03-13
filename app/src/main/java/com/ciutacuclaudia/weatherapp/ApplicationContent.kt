@@ -5,13 +5,13 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
-import com.ciutacuclaudia.weatherapp.navigation.MainScreenDestination
+import com.ciutacuclaudia.weatherapp.navigation.Destination
 import com.ciutacuclaudia.weatherapp.navigation.NavHostController
 import com.ciutacuclaudia.weatherapp.ui.theme.WeatherAppTheme
 
 @Composable
 fun ApplicationContent(
-    startDestination: String = MainScreenDestination.route,
+    startDestination: String = Destination.SplashScreen.route,
 ) {
     val navController = rememberNavController()
 

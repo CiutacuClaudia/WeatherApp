@@ -20,8 +20,10 @@ retrofit = "2.9.0"
 moshi-kotlin = "1.15.0"
 timber = "5.0.1"
 coil-compose = "2.5.0"
+lottie = "5.2.0"
 
 [libraries]
+lottieAnimation = {module = "com.airbnb.android:lottie-compose", version.ref = "lottie"}
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 hilt-android-compiler-v248 = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
