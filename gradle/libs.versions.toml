@@ -9,6 +9,7 @@ coreKtx = "1.12.0"
 junit = "4.13.2"
 junitVersion = "1.1.5"
 espressoCore = "3.5.1"
+kotlinxCoroutinesTest = "1.7.3"
 lifecycleRuntimeKtx = "2.7.0"
 activityCompose = "1.8.2"
 composeBom = "2024.02.01"
@@ -21,9 +22,14 @@ moshi-kotlin = "1.15.0"
 timber = "5.0.1"
 coil-compose = "2.5.0"
 lottie = "5.2.0"
+mockito = "5.11.0"
+activity = "1.8.2"
+lifecycle-ktx = "2.7.0"
+androidxCoreTesting = "2.2.0"
 
 [libraries]
-lottieAnimation = {module = "com.airbnb.android:lottie-compose", version.ref = "lottie"}
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinxCoroutinesTest" }
+lottieAnimation = { module = "com.airbnb.android:lottie-compose", version.ref = "lottie" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
 hilt-android-compiler-v248 = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
@@ -52,7 +58,10 @@ retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit
 converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofit" }
 moshi-kotlin = { module = "com.squareup.moshi:moshi-kotlin", version.ref = "moshi-kotlin" }
 timber = { module = "com.jakewharton.timber:timber", version.ref = "timber" }
-
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
+lifecycle = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle-ktx" }
+androidx-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "androidxCoreTesting"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
